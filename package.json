@@ -1,1 +1,12 @@
-
+{
+  "name": "devops-ci-pipeline",
+  "version": "1.0.0",
+  "description": "Jenkins CI pipeline application",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
