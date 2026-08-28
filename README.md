@@ -1,1 +1,1 @@
-# devops-ci-pipeline
+Jenkins CI pipeline configured successfully.
