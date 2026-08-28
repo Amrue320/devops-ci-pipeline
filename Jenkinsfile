@@ -23,9 +23,10 @@ pipeline {
             }
         }
 
-    stage('Validation') {
+  stage('Validation') {
     steps {
-        sh 'test -f file-that-does-not-exist.txt'
+        echo 'Performing additional validation...'
+        sh 'test -f package.json'
     }
 }
     }
