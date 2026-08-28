@@ -23,12 +23,11 @@ pipeline {
             }
         }
 
-        stage('Validation') {
-            steps {
-                echo 'Performing additional validation...'
-                bat 'if exist package.json (echo package.json exists) else (exit /b 1)'
-            }
-        }
+    stage('Validation') {
+    steps {
+        sh 'test -f file-that-does-not-exist.txt'
+    }
+}
     }
 
     post {
