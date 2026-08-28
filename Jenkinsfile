@@ -12,21 +12,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application...'
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Validation') {
             steps {
                 echo 'Performing additional validation...'
-                sh 'test -f package.json'
+                bat 'if exist package.json (echo package.json exists) else (exit /b 1)'
             }
         }
     }
